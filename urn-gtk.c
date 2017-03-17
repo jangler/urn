@@ -36,7 +36,7 @@ typedef struct _UrnAppClass  UrnAppClass;
 typedef struct _UrnAppWindow         UrnAppWindow;
 typedef struct _UrnAppWindowClass    UrnAppWindowClass;
 
-#define WINDOW_PAD (8)
+#define WINDOW_PAD (4)
 
 typedef struct {
     guint key;

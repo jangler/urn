@@ -87,7 +87,11 @@ static void urn_time_string_format(char *string,
             sprintf(string, "%s%d:%02d", sign, minutes, seconds);
         }
     } else {
-        sprintf(string, "%s%d%s", sign, seconds, dot_subsecs);
+        if (!compact) {
+            sprintf(string, "%s%d%s", sign, seconds, dot_subsecs);
+        } else {
+            sprintf(string, "%s%d", sign, seconds);
+        }
     }
 }
 
